@@ -1,0 +1,35 @@
+[build-system]
+requires      = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-powered-dev-toolkit"
+version = "0.1.0"
+description = "AI-driven utilities for smarter development workflows"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Your Name", email = "you@example.com"}]
+dependencies = [
+    "click>=8.0",
+    "openai>=1.0",
+    "rich>=13.0",
+    "gitpython>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "pytest-cov",
+    "black",
+    "ruff",
+    "pre-commit",
+]
+
+[project.scripts]
+ai-review = "cli.main:review"
+ai-doc    = "cli.main:doc"
+
+[project.urls]
+Homepage = "https://github.com/your-username/ai-powered-dev-toolkit"
+Issues   = "https://github.com/your-username/ai-powered-dev-toolkit/issues"
