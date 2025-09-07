@@ -50,6 +50,8 @@ ai-doc src/utils.py -o docs/utils.md
 
 ```
 📖 Example Output
+
+```
 diff
 $ ai-review --diff
 ▶ src/cache.py
