@@ -33,9 +33,10 @@
 
 ## 🪄 Quick Start
 
-```bash
+```
 pip install ai-powered-dev-toolkit
 
+```
 bash
 复制
 # Authenticate (uses your own OpenAI / Anthropy key)
@@ -85,4 +86,3 @@ MIT © Your Name.
 <p align="center">
   ⭐ Star us on GitHub — it keeps the AI models well-fed!
 </p>
-```
