@@ -37,8 +37,8 @@
 pip install ai-powered-dev-toolkit
 
 ```
-bash
-复制
+
+```
 # Authenticate (uses your own OpenAI / Anthropy key)
 ai-toolkit auth
 
@@ -47,9 +47,10 @@ ai-review --diff
 
 # Generate docs for a module
 ai-doc src/utils.py -o docs/utils.md
+
+```
 📖 Example Output
 diff
-复制
 $ ai-review --diff
 ▶ src/cache.py
 --------------------------------------------------------
@@ -57,16 +58,22 @@ $ ai-review --diff
    manual dict + TTL logic (line 42).
 ✅  Security: no hard-coded secrets detected.
 💡  Style: missing type hint for `ttl_seconds`.
+
+```
 🛠️ Developer Setup
-bash
-复制
+
+```
 git clone https://github.com/your-username/ai-powered-dev-toolkit.git
 cd ai-powered-dev-toolkit
 make install-dev      # installs + pre-commit hooks
 make test             # pytest + coverage
 make build            # wheel + tarball
+
+```
+
 📁 Project Layout
-复制
+
+```
 ai-powered_dev_toolkit/
 ├── ai_dev_toolkit/        # core library
 ├── cli/                   # click-based CLI
@@ -74,15 +81,23 @@ ai-powered_dev_toolkit/
 ├── docs/                  # mkdocs material
 ├── scripts/               # release & changelog
 └── examples/              # Jupyter notebooks
+
+```
 🔌 Integrations
+
+```
 VS Code extension (coming soon)
 GitHub Action (ai-review-action)
 pre-commit hook (ai-doc-hook)
+
+```
+
 🤝 Contributing
+
+```
 We welcome PRs! Please see CONTRIBUTING.md for the local setup and our Code of Conduct.
-📄 License
-MIT © Your Name.
-<!-- 星标呼吁 -->
+
+```
 <p align="center">
   ⭐ Star us on GitHub — it keeps the AI models well-fed!
 </p>
